@@ -51,7 +51,7 @@ By default, vMenu will use ox_lib notifications.<br/>You can disable this and us
 
 This is just our template notify function using ox_lib's notifications with some custom styling for different noti types. (Edit this in `config/config_client`)
 You can modify this as you like - or replace it entirely with an export to your resource.
-```lua showLineNumbers
+```lua showLineNumbers filename="config_client.lua"
 Notify = function(title, msg, ntype, time)
     -- these are just different examples i did for ox_lib, you can change these of course how you like
     if ntype == "error" then
