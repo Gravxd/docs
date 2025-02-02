@@ -1,5 +1,5 @@
 export default {
   index: "",
   fivem: "FiveM",
-  vmenuox: "vMenuOX",
+  vmenuox: "vMenu-ox",
 };
