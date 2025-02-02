@@ -1,11 +1,15 @@
 import nextra from "nextra";
 
 const withNextra = nextra({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.tsx",
+  latex: false,
+  search: {
+    codeblocks: false,
+  },
+  contentDirBasePath: "/docs",
 });
 
 export default withNextra({
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
