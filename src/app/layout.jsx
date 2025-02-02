@@ -33,6 +33,7 @@ export default async function RootLayout({ children }) {
       logo={
         <Image src="/logo.webp" alt="ChromaLabs Logo" width={32} height={32} />
       }
+      projectLink="https://github.com/Gravxd/"
       chatLink="https://discord.gg/chromalabs"
     />
   );
@@ -41,11 +42,8 @@ export default async function RootLayout({ children }) {
       <Head faviconGlyph="✦" />
       <body>
         <Layout
-          banner={
-            <Banner storageKey="welcometothedocs">Welcome to the Docs</Banner>
-          }
           navbar={navbar}
-          footer={<Footer>{new Date().getFullYear()} © ChromaLabs.</Footer>}
+          footer={<Footer></Footer>}
           editLink="Edit this page on GitHub"
           docsRepositoryBase="https://github.com/Gravxd/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
