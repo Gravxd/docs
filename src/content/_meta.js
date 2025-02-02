@@ -1,4 +1,4 @@
 export default {
-  fivem: "FiveM",
   index: "",
+  fivem: "FiveM",
 };
