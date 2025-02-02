@@ -44,7 +44,7 @@ export default async function RootLayout({ children }) {
         <Layout
           navbar={navbar}
           footer={<Footer></Footer>}
-          editLink="Edit this page on GitHub"
+          editLink="Edit this page"
           docsRepositoryBase="https://github.com/Gravxd/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={await getPageMap()}
