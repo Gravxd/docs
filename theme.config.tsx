@@ -10,9 +10,9 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.gg/chromalabs",
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/Gravxd/docs",
   footer: {
-    content: "Nextra Docs Template",
+    content: "",
   },
 };
 
