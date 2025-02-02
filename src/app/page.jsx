@@ -6,8 +6,9 @@ import { Book, Code, Compass, FileText } from "lucide-react";
 import { Cards } from "nextra/components";
 
 export const metadata = {
-  title: "ChromaLabs Docs",
-  description: "Documentation and guides for ChromaLabs FiveM scripts",
+  title: "ChromaLabs Documentation",
+  description: "Collection of guides & resources for FiveM servers.",
+  image: "/logo.webp",
 };
 
 export default function IndexPage() {
