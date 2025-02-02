@@ -2,6 +2,7 @@
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
 import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
+import Image from "next/image";
 import "../app/globals.css";
 import "nextra-theme-docs/style.css";
 
@@ -29,13 +30,9 @@ export default async function RootLayout({ children }) {
   const navbar = (
     <Navbar
       logo={
-        <div>
-          <b>Nextra</b>{" "}
-          <span style={{ opacity: "60%" }}>The Next Docs Builder</span>
-        </div>
+        <Image src="/logo.webp" alt="ChromaLabs Logo" width={32} height={32} />
       }
-      // Next.js discord server
-      chatLink="https://discord.gg/hEM84NMkRv"
+      chatLink="https://discord.gg/chromalabs"
     />
   );
   return (
@@ -43,11 +40,13 @@ export default async function RootLayout({ children }) {
       <Head faviconGlyph="✦" />
       <body>
         <Layout
-          banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
+          banner={
+            <Banner storageKey="welcometothedocs">Welcome to the Docs</Banner>
+          }
           navbar={navbar}
           footer={<Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>}
-          editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/docs"
+          // editLink="Edit this page on GitHub"
+          // docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={await getPageMap()}
         >
