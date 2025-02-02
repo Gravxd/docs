@@ -7,7 +7,7 @@ import "../app/globals.css";
 import "nextra-theme-docs/style.css";
 
 export const metadata = {
-  metadataBase: new URL("https://nextra.site"),
+  metadataBase: new URL("https://discord.gg/chromalabs"),
   title: {
     template: "%s - ChromaLabs",
   },
