@@ -1,7 +1,6 @@
 export default {
-    information: "Information",
-    installation: "Installation",
-    integrations: "Developer Integrations",
-    textures: "Changing Textures",
+  information: "Information",
+  installation: "Installation",
+  integrations: "Developer Integrations",
+  textures: "Changing Textures",
 };
-  
