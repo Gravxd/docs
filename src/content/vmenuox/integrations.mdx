@@ -28,8 +28,8 @@ AddEventHandler("vMenu:Integrations:Action", function(action, data)
         lib.print.debug("License Plate Updated: " .. data.handle .. " - " .. data.plate)
         --[[
             Example Usage:
-            if doesTextContainBlacklistedWord(plate) then
-                SetVehicleNumberPlateText(handle, "PLATE")
+            if doesTextContainBlacklistedWord(data.plate) then
+                SetVehicleNumberPlateText(data.handle, "PLATE")
                 TriggerServerEvent("banplayer")
             end
         --]]
