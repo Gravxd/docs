@@ -7,9 +7,10 @@ import "../app/globals.css";
 import "nextra-theme-docs/style.css";
 
 export const metadata = {
-  metadataBase: new URL("https://discord.gg/chromalabs"),
+  metadataBase: "https://docs.grav.wtf",
   title: {
     template: "%s - ChromaLabs",
+    default: "ChromaLabs",
   },
   description: "ChromaLabs: FiveM Scripts & Resources",
   applicationName: "ChromaLabs",
@@ -55,7 +56,6 @@ export const metadata = {
     type: "website",
   },
 };
-
 export default async function RootLayout({ children }) {
   const navbar = (
     <Navbar

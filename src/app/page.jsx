@@ -10,6 +10,57 @@ import { Button } from "../../components/ui/button";
 import { Book, Code, Compass, FileText } from "lucide-react";
 import { Cards } from "nextra/components";
 
+export const metadata = {
+  metadataBase: "https://docs.grav.wtf",
+  title: {
+    template: "%s - ChromaLabs",
+    default: "ChromaLabs",
+  },
+  description: "ChromaLabs: FiveM Scripts & Resources",
+  applicationName: "ChromaLabs",
+  generator: "Next.js",
+  appleWebApp: {
+    title: "ChromaLabs",
+  },
+
+  other: {
+    "msapplication-TileImage": "/ms-icon-144x144.png",
+    "msapplication-TileColor": "#fff",
+  },
+  twitter: {
+    site: "https://discord.gg/chromalabs",
+  },
+
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+
+  openGraph: {
+    title: "ChromaLabs",
+    description: "ChromaLabs: FiveM Scripts & Resources",
+    url: "https://docs.grav.wtf",
+    siteName: "ChromaLabs",
+    images: [
+      {
+        url: "https://grav.wtf/chromalabsbannerfivem.png",
+        width: 800,
+        height: 600,
+        alt: "ChromaLabs",
+      },
+      {
+        url: "https://grav.wtf/chromalabsbannerfivem.png",
+        width: 1800,
+        height: 1600,
+        alt: "ChromaLabs",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
+
 export default function IndexPage() {
   return (
     <div className="min-h-screen bg-black">
