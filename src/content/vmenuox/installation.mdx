@@ -48,7 +48,11 @@ Add `ensure vMenu` to your `server.cfg` and restart the server.
 > [!WARNING]
 >
 > Make sure that `ox_lib` is started before `vMenu` in your `server.cfg`
-
+> ```cfg
+> start ox_lib
+> exec @vMenu/config/permissions.cfg
+> start vMenu
+> ```
 
 
 </Steps>
