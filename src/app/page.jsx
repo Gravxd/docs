@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Book, Code, Compass, FileText } from "lucide-react";
 import { Cards } from "nextra/components";
-
-export const metadata = {
-  title: "ChromaLabs Documentation",
-  description: "Collection of guides & resources for FiveM servers.",
-  image: "/logo.webp",
-};
 
 export default function IndexPage() {
   return (
@@ -20,14 +19,27 @@ export default function IndexPage() {
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
               <div className="flex items-center gap-4 mb-8">
-                <Image src="/logo.webp" alt="ChromaLabs Logo" width={80} height={80} className="w-20 h-20" />
-                <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-transparent bg-clip-text sm:text-6xl">ChromaLabs</h1>
+                <Image
+                  src="/logo.webp"
+                  alt="ChromaLabs Logo"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20"
+                />
+                <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-transparent bg-clip-text sm:text-6xl">
+                  ChromaLabs
+                </h1>
               </div>
               <p className="mt-6 text-lg leading-8 text-zinc-300">
-                Comprehensive documentation for FiveM scripts, guides, and resources.<br></br>Build better experiences for your communities.
+                Comprehensive documentation for FiveM scripts, guides, and
+                resources.<br></br>Build better experiences for your
+                communities.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
-                <Button asChild className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-0">
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-0"
+                >
                   <Cards.Card title="Get Started" href="/docs" arrow />
                 </Button>
               </div>
@@ -47,7 +59,10 @@ export default function IndexPage() {
                 Documentation
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-zinc-400">Detailed documentation for our FiveM scripts and resources. Learn how to install, configure, and customize our tools.</CardContent>
+            <CardContent className="text-zinc-400">
+              Detailed documentation for our FiveM scripts and resources. Learn
+              how to install, configure, and customize our tools.
+            </CardContent>
           </Card>
 
           <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
@@ -57,7 +72,10 @@ export default function IndexPage() {
                 Scripting
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-zinc-400">Step-by-step guides and tutorials to help you make the most of our scripts and integrate them into your server.</CardContent>
+            <CardContent className="text-zinc-400">
+              Step-by-step guides and tutorials to help you make the most of our
+              scripts and integrate them into your server.
+            </CardContent>
           </Card>
 
           <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
@@ -67,7 +85,10 @@ export default function IndexPage() {
                 Resources
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-zinc-400">Additional resources, best practices, and community contributions to enhance your FiveM development experience.</CardContent>
+            <CardContent className="text-zinc-400">
+              Additional resources, best practices, and community contributions
+              to enhance your FiveM development experience.
+            </CardContent>
           </Card>
 
           <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
@@ -77,7 +98,10 @@ export default function IndexPage() {
                 Developer Integrations
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-zinc-400">We aim to provide easy & simple development integration abilities allowing seamless connection between your mods and ours.</CardContent>
+            <CardContent className="text-zinc-400">
+              We aim to provide easy & simple development integration abilities
+              allowing seamless connection between your mods and ours.
+            </CardContent>
           </Card>
         </div>
       </div>

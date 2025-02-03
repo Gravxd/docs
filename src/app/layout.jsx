@@ -25,6 +25,35 @@ export const metadata = {
   twitter: {
     site: "https://discord.gg/chromalabs",
   },
+
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+
+  openGraph: {
+    title: "ChromaLabs",
+    description: "ChromaLabs: FiveM Scripts & Resources",
+    url: "https://docs.grav.wtf",
+    siteName: "ChromaLabs",
+    images: [
+      {
+        url: "https://grav.wtf/chromalabsbannerfivem.png",
+        width: 800,
+        height: 600,
+        alt: "ChromaLabs",
+      },
+      {
+        url: "https://grav.wtf/chromalabsbannerfivem.png",
+        width: 1800,
+        height: 1600,
+        alt: "ChromaLabs",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default async function RootLayout({ children }) {
