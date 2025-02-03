@@ -35,7 +35,13 @@ Here's a [video preview](https://www.youtube.com/watch?v=qWYHNAXnCHw) of our veh
 <Steps>
 ### Enable Sharing
 You'll need to enable both of the systems in the `config/permissions.cfg`
-<Image src="https://grav.wtf/vmenuox-outfitcfg.webp" alt="Hello" width={500} height={500} />
+```cfg
+# Enable or disable the outfit sharing system - this requires oxmysql or a sql resource
+setr vmenu_outfitcodes false
+
+# Enable or disable the vehicle sharing system - this also requires oxmysql or a sql resource
+setr vmenu_vehiclecodes false
+```
 
 ### Setup Database Tables
 You can find the required queries to run in your database in the root directory of the resource inside `database.sql`
