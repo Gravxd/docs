@@ -16,7 +16,7 @@ export const metadata = {
     template: "%s - ChromaLabs",
     default: "ChromaLabs",
   },
-  description: "ChromaLabs: FiveM Scripts & Resources",
+  description: "FiveM Scripts & Resources",
   applicationName: "ChromaLabs",
   generator: "Next.js",
   appleWebApp: {
