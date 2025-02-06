@@ -38,7 +38,7 @@ export const metadata = {
     telephone: true,
   },
   icons: {
-    icon: [{ url: "./favicon-16x16.png", sizes: "16x16" }],
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "ChromaLabs",
@@ -56,6 +56,15 @@ export const metadata = {
     ],
     locale: "en_US",
     type: "website",
+    site_name: "ChromaLabs",
+    image: {
+      width: "1200",
+      height: "630",
+      alt: "ChromaLabs | FiveM Scripts & Resources",
+    },
+    locale: {
+      alternate: ["en_GB"],
+    },
   },
 };
 
