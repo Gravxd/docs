@@ -8,7 +8,6 @@ import {
 } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Book, Code, Compass, FileText } from "lucide-react";
-import { Cards } from "nextra/components";
 
 export const metadata = {
   metadataBase: "https://docs.grav.wtf",
@@ -22,21 +21,18 @@ export const metadata = {
   appleWebApp: {
     title: "ChromaLabs",
   },
-
   other: {
     "msapplication-TileImage": "/ms-icon-144x144.png",
     "msapplication-TileColor": "#fff",
   },
   twitter: {
-    site: "https://discord.gg/chromalabs",
+    site: "@chromalabs",
   },
-
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
-
   openGraph: {
     title: "ChromaLabs",
     description: "ChromaLabs: FiveM Scripts & Resources",
@@ -45,15 +41,9 @@ export const metadata = {
     images: [
       {
         url: "https://grav.wtf/chromalabsbannerfivem.png",
-        width: 800,
-        height: 600,
-        alt: "ChromaLabs",
-      },
-      {
-        url: "https://grav.wtf/chromalabsbannerfivem.png",
-        width: 1800,
-        height: 1600,
-        alt: "ChromaLabs",
+        width: 1200,
+        height: 630,
+        alt: "ChromaLabs Banner",
       },
     ],
     locale: "en_US",
@@ -63,7 +53,9 @@ export const metadata = {
 
 export default function IndexPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black relative">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#3b096c_0%,_transparent_45%)]" />
+
       {/* Hero Section */}
       <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8">
@@ -86,24 +78,26 @@ export default function IndexPage() {
                 resources.<br></br>Build better experiences for your
                 communities.
               </p>
-              <div className="mt-10 flex items-center gap-x-6">
-                <Button
-                  asChild
-                  className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-0"
-                >
-                  <Cards.Card title="Get Started" href="/docs" arrow />
-                </Button>
+              <div className="mt-6 flex items-center gap-x-6">
+                <Link href="/docs">
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105 after:absolute after:content-[''] after:bg-white/20 after:h-full after:w-1/3 after:top-0 after:-left-full after:transform after:rotate-45 after:transition-all after:duration-700 hover:after:translate-x-[400%]"
+                  >
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_#3b096c_0%,_transparent_50%)]" />
       </div>
 
       {/* Content Grid */}
-      <div className="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 lg:px-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
+          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group relative">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-zinc-100">
                 <Book className="w-5 h-5 text-pink-500" />
@@ -116,7 +110,7 @@ export default function IndexPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
+          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group relative">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-zinc-100">
                 <Code className="w-5 h-5 text-purple-500" />
@@ -129,7 +123,7 @@ export default function IndexPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
+          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group relative">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-zinc-100">
                 <Compass className="w-5 h-5 text-cyan-500" />
@@ -142,7 +136,7 @@ export default function IndexPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group">
+          <Card className="bg-zinc-900/50 border-zinc-800 hover:border-zinc-700 transition-colors group relative">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-zinc-100">
                 <FileText className="w-5 h-5 text-blue-500" />
