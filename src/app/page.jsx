@@ -27,11 +27,18 @@ export const metadata = {
   },
   twitter: {
     site: "@chromalabs",
+    card: "summary_large_image",
+    title: "ChromaLabs",
+    description: "ChromaLabs: FiveM Scripts & Resources",
+    images: ["https://grav.wtf/chromalabsbannerfivem.png"],
   },
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
+  },
+  icons: {
+    icon: [{ url: "./favicon-16x16.png", sizes: "16x16" }],
   },
   openGraph: {
     title: "ChromaLabs",
@@ -44,6 +51,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "ChromaLabs Banner",
+        type: "image/png",
       },
     ],
     locale: "en_US",
